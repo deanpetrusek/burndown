@@ -4,10 +4,10 @@
 @section Scripts{
 <environment names="Development">
     <script src="~/lib/chartist/dist/chartist.js"></script>
-    <script src="~/js/home.js" asp-append-version="true"></script>
+    <script src="~/js/home.js"></script>
 </environment>
 <environment names="Staging,Production">
-    <script src="~/js/home.bundle.js" asp-append-version="true"></script>
+    <script src="~/js/home.bundle.min.js"></script>
 </environment>
 }
 @section Styles{
@@ -15,6 +15,7 @@
         <link href="~/lib/chartist/dist/chartist.css" rel="stylesheet" />
     </environment>
     <environment names="Staging,Production">
+        <script src="~/css/home.bundle.min.css" asp-append-version="true"></script>
     </environment>
 }
 <div id="my-chart"></div>

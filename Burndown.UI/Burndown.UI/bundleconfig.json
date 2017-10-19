@@ -22,8 +22,9 @@
     "sourceMap": false
   },
   {
-    "outputFileName": "wwwroot/js/home.bundle.js",
+    "outputFileName": "wwwroot/js/home.bundle.min.js",
     "inputFiles": [
+      "wwwroot/lib/chartist/dist/chartist.js",
       "wwwroot/js/home.js"
     ],
     // Optionally specify minification options
@@ -35,16 +36,9 @@
     "sourceMap": false
   },
   {
-    "outputFileName": "wwwroot/css/home.bundle.css",
+    "outputFileName": "wwwroot/css/home.bundle.min.css",
     "inputFiles": [
       "wwwroot/lib/chartist/dist/chartist.css"
-    ],
-    // Optionally specify minification options
-    "minify": {
-      "enabled": true,
-      "renameLocals": true
-    },
-    // Optionally generate .map file
-    "sourceMap": false
+    ]
   }
 ]
